@@ -60,7 +60,7 @@ export default {
     getTagList() {
       this.$http({
         type: 'get',
-        url: 'api/tag/list',
+        url: 'api/tag/all',
         success: (data) => {
           this.tagOptions = data.list;
         },
